@@ -1,4 +1,4 @@
-#include "pch.h"
+
 #include <iostream>
 #include <string>
 #include <string.h>
@@ -31,9 +31,6 @@ int main() {
 	std::cout << "s1 = " << s1[0] << std::endl;
 	std::cout << "s3 = " << s3 << std::endl;
 
-
-
-	
 	// copy str1 into str3
 	str3 = str1;
 	//std::cout << "str3 : " << str3 << std::endl;
@@ -46,6 +43,11 @@ int main() {
 	len = str3.size();
 	//std::cout << "str3.size() :  " << len << "\n";
 	//std::cout << "str3.deneme() : " << str3.back() << std::endl;
+
+	//! string copy
+	char t[5];
+	s3.copy(t,2,0);
+	std::cout<<"string t : " << t<<"\n";
 
 	return 0;
 }
